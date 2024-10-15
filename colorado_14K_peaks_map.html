@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c04c2dd46cb3237b38251c0f82bec71e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c04c2dd46cb3237b38251c0f82bec71e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c04c2dd46cb3237b38251c0f82bec71e = L.map(
+                "map_c04c2dd46cb3237b38251c0f82bec71e",
+                {
+                    center: [38.9972, -105.5478],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c18d1bf13fcebadbcc217e177e85c67b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_c18d1bf13fcebadbcc217e177e85c67b.addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var marker_0a3817942872c25ff63d9ea47baa9e93 = L.marker(
+                [39.11775, -106.44538],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_614f306a7bc8140ee4575db2848afd0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0a3817942872c25ff63d9ea47baa9e93.setIcon(icon_614f306a7bc8140ee4575db2848afd0a);
+        
+    
+        var popup_9be86e08715795e0a173e08c2ae2a193 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_34e5bd9f9350b6c1c9a7e2437cf9754e = $(`<div id="html_34e5bd9f9350b6c1c9a7e2437cf9754e" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 1<br><b>Peak:</b> Mt. Elbert<br><b>Elevation:</b> 14440 feet<br></div>`)[0];
+                popup_9be86e08715795e0a173e08c2ae2a193.setContent(html_34e5bd9f9350b6c1c9a7e2437cf9754e);
+            
+        
+
+        marker_0a3817942872c25ff63d9ea47baa9e93.bindPopup(popup_9be86e08715795e0a173e08c2ae2a193)
+        ;
+
+        
+    
+    
+            var marker_4fd72158cd76586e7db04277dc6ae05b = L.marker(
+                [39.1875, -106.4757],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_a24dbd6755f4493d3295039de1a908f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4fd72158cd76586e7db04277dc6ae05b.setIcon(icon_a24dbd6755f4493d3295039de1a908f7);
+        
+    
+        var popup_7c955adc3e74fe717242cb85690259d7 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_00d59f25b1b7a0375372fa9361949440 = $(`<div id="html_00d59f25b1b7a0375372fa9361949440" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 2<br><b>Peak:</b> Mt. Massive<br><b>Elevation:</b> 14421 feet<br></div>`)[0];
+                popup_7c955adc3e74fe717242cb85690259d7.setContent(html_00d59f25b1b7a0375372fa9361949440);
+            
+        
+
+        marker_4fd72158cd76586e7db04277dc6ae05b.bindPopup(popup_7c955adc3e74fe717242cb85690259d7)
+        ;
+
+        
+    
+    
+            var marker_2e5b9a4863eadba96d8dc376d1d2aef5 = L.marker(
+                [38.9244148, -106.3208069],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_700860cf24bc5e4702778dd5ba17100d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2e5b9a4863eadba96d8dc376d1d2aef5.setIcon(icon_700860cf24bc5e4702778dd5ba17100d);
+        
+    
+        var popup_9d307b2aa86fcd12e8ab252e5920753c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_23d3efd6f4cdebcb71ec95cf9da0e1ef = $(`<div id="html_23d3efd6f4cdebcb71ec95cf9da0e1ef" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 3<br><b>Peak:</b> Mt. Harvard<br><b>Elevation:</b> 14421 feet<br></div>`)[0];
+                popup_9d307b2aa86fcd12e8ab252e5920753c.setContent(html_23d3efd6f4cdebcb71ec95cf9da0e1ef);
+            
+        
+
+        marker_2e5b9a4863eadba96d8dc376d1d2aef5.bindPopup(popup_9d307b2aa86fcd12e8ab252e5920753c)
+        ;
+
+        
+    
+    
+            var marker_24cae38b99b8ceb2f1c84d7eccfd2d76 = L.marker(
+                [37.5772269, -105.4858447],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_c9c46376dd64c2d14bbcd8e828f6a3bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_24cae38b99b8ceb2f1c84d7eccfd2d76.setIcon(icon_c9c46376dd64c2d14bbcd8e828f6a3bb);
+        
+    
+        var popup_2fbf467f5f970c53636afd6e91aaee93 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5be3fbee7f613bd4bd7a1345df1a33f9 = $(`<div id="html_5be3fbee7f613bd4bd7a1345df1a33f9" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 4<br><b>Peak:</b> Blanca peak<br><b>Elevation:</b> 14345 feet<br></div>`)[0];
+                popup_2fbf467f5f970c53636afd6e91aaee93.setContent(html_5be3fbee7f613bd4bd7a1345df1a33f9);
+            
+        
+
+        marker_24cae38b99b8ceb2f1c84d7eccfd2d76.bindPopup(popup_2fbf467f5f970c53636afd6e91aaee93)
+        ;
+
+        
+    
+    
+            var marker_e2d1b1eacc542515a01627a2bd299e3d = L.marker(
+                [39.0295, -106.47301],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_7c708fe2626beb7aaa7f07f2f017b8f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e2d1b1eacc542515a01627a2bd299e3d.setIcon(icon_7c708fe2626beb7aaa7f07f2f017b8f4);
+        
+    
+        var popup_83078ad2141d5ddf3b44b60fe7ad2122 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ec5cbbf1074dbc265a4f95939124e9f0 = $(`<div id="html_ec5cbbf1074dbc265a4f95939124e9f0" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 5<br><b>Peak:</b> La Plata Peak<br><b>Elevation:</b> 14336 feet<br></div>`)[0];
+                popup_83078ad2141d5ddf3b44b60fe7ad2122.setContent(html_ec5cbbf1074dbc265a4f95939124e9f0);
+            
+        
+
+        marker_e2d1b1eacc542515a01627a2bd299e3d.bindPopup(popup_83078ad2141d5ddf3b44b60fe7ad2122)
+        ;
+
+        
+    
+    
+            var marker_bb6a05cfa2097067217a13bcc2e125f8 = L.marker(
+                [38.071665, -107.462186],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_ec1c6f506ac0d99546defae73dd866d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_bb6a05cfa2097067217a13bcc2e125f8.setIcon(icon_ec1c6f506ac0d99546defae73dd866d8);
+        
+    
+        var popup_11f5935a8bc3fcbba86057f583400268 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4c4e0f524739d557737fb574ae033ef8 = $(`<div id="html_4c4e0f524739d557737fb574ae033ef8" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 6<br><b>Peak:</b> Uncompahgre Peak<br><b>Elevation:</b> 14321 feet<br></div>`)[0];
+                popup_11f5935a8bc3fcbba86057f583400268.setContent(html_4c4e0f524739d557737fb574ae033ef8);
+            
+        
+
+        marker_bb6a05cfa2097067217a13bcc2e125f8.bindPopup(popup_11f5935a8bc3fcbba86057f583400268)
+        ;
+
+        
+    
+    
+            var marker_2e0ba745f1beb14c889b096d4be1ee6b = L.marker(
+                [37.966868, -105.585397],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_8aaaacfacca451dd2a6ec0ee177924e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2e0ba745f1beb14c889b096d4be1ee6b.setIcon(icon_8aaaacfacca451dd2a6ec0ee177924e2);
+        
+    
+        var popup_3208731e23f63cfb8f0bf40800d4b4a5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_781cb7922b0d8f519bf81695cc3ed9ae = $(`<div id="html_781cb7922b0d8f519bf81695cc3ed9ae" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 7<br><b>Peak:</b> Crestone Peak<br><b>Elevation:</b> 14294 feet<br></div>`)[0];
+                popup_3208731e23f63cfb8f0bf40800d4b4a5.setContent(html_781cb7922b0d8f519bf81695cc3ed9ae);
+            
+        
+
+        marker_2e0ba745f1beb14c889b096d4be1ee6b.bindPopup(popup_3208731e23f63cfb8f0bf40800d4b4a5)
+        ;
+
+        
+    
+    
+            var marker_122a4d9c3b76981bd14c4bf46e142a41 = L.marker(
+                [39.3514401, -106.111554],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_3d340c860f25292433a14d4c240967c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_122a4d9c3b76981bd14c4bf46e142a41.setIcon(icon_3d340c860f25292433a14d4c240967c3);
+        
+    
+        var popup_50da42d4e7bdede408defb6ad9598af0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_34be62e925b75834532d79f608ff767b = $(`<div id="html_34be62e925b75834532d79f608ff767b" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 8<br><b>Peak:</b> Mt. Lincoln<br><b>Elevation:</b> 14293 feet<br></div>`)[0];
+                popup_50da42d4e7bdede408defb6ad9598af0.setContent(html_34be62e925b75834532d79f608ff767b);
+            
+        
+
+        marker_122a4d9c3b76981bd14c4bf46e142a41.bindPopup(popup_50da42d4e7bdede408defb6ad9598af0)
+        ;
+
+        
+    
+    
+            var marker_2cb0f62d7ebd04f16fb7f3b4453aff54 = L.marker(
+                [44.087811, -103.722644],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_f5c68b0a2a900ee86a1045e4e374887e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2cb0f62d7ebd04f16fb7f3b4453aff54.setIcon(icon_f5c68b0a2a900ee86a1045e4e374887e);
+        
+    
+        var popup_0fb517ef526848c7c7f8479e235584d4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_df3784e4281d1185dac6ff78af390db1 = $(`<div id="html_df3784e4281d1185dac6ff78af390db1" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 9<br><b>Peak:</b> Castle Peak<br><b>Elevation:</b> 14279 feet<br></div>`)[0];
+                popup_0fb517ef526848c7c7f8479e235584d4.setContent(html_df3784e4281d1185dac6ff78af390db1);
+            
+        
+
+        marker_2cb0f62d7ebd04f16fb7f3b4453aff54.bindPopup(popup_0fb517ef526848c7c7f8479e235584d4)
+        ;
+
+        
+    
+    
+            var marker_10348ae4946c7973f099ae3f2278fcbf = L.marker(
+                [39.66105, -105.784],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_8035c7cfc1384bd70b28b2d5549bf0a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_10348ae4946c7973f099ae3f2278fcbf.setIcon(icon_8035c7cfc1384bd70b28b2d5549bf0a6);
+        
+    
+        var popup_d1771329de16936cf499edd13b325d99 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f9db62b691e371c50c4ccc93c92a9b7f = $(`<div id="html_f9db62b691e371c50c4ccc93c92a9b7f" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 10<br><b>Peak:</b> Grays Peak<br><b>Elevation:</b> 14278 feet<br></div>`)[0];
+                popup_d1771329de16936cf499edd13b325d99.setContent(html_f9db62b691e371c50c4ccc93c92a9b7f);
+            
+        
+
+        marker_10348ae4946c7973f099ae3f2278fcbf.bindPopup(popup_d1771329de16936cf499edd13b325d99)
+        ;
+
+        
+    
+    
+            var marker_d8e943c90b0f01e87d9f3fda02661f1e = L.marker(
+                [38.67416, -106.24624],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_fa5407bdada825fd9a11218a6f6d7894 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d8e943c90b0f01e87d9f3fda02661f1e.setIcon(icon_fa5407bdada825fd9a11218a6f6d7894);
+        
+    
+        var popup_0e3b337033564ce4718fab69257ab454 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_67cb924ff9844f391d80c30a2fae2ceb = $(`<div id="html_67cb924ff9844f391d80c30a2fae2ceb" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 11<br><b>Peak:</b> Mt. Antero<br><b>Elevation:</b> 14276 feet<br></div>`)[0];
+                popup_0e3b337033564ce4718fab69257ab454.setContent(html_67cb924ff9844f391d80c30a2fae2ceb);
+            
+        
+
+        marker_d8e943c90b0f01e87d9f3fda02661f1e.bindPopup(popup_0e3b337033564ce4718fab69257ab454)
+        ;
+
+        
+    
+    
+            var marker_51dc2017f552a97b75ada91177804446 = L.marker(
+                [39.642753, -105.821223],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_7f165f2c1875e223439bce03bcaa454a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_51dc2017f552a97b75ada91177804446.setIcon(icon_7f165f2c1875e223439bce03bcaa454a);
+        
+    
+        var popup_2af9817d4ca636c44fd1aa52852f9abe = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_098a56d17fc4280bfa705ec30f028fb6 = $(`<div id="html_098a56d17fc4280bfa705ec30f028fb6" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 12<br><b>Peak:</b> Torreys Peak<br><b>Elevation:</b> 14275 feet<br></div>`)[0];
+                popup_2af9817d4ca636c44fd1aa52852f9abe.setContent(html_098a56d17fc4280bfa705ec30f028fb6);
+            
+        
+
+        marker_51dc2017f552a97b75ada91177804446.bindPopup(popup_2af9817d4ca636c44fd1aa52852f9abe)
+        ;
+
+        
+    
+    
+            var marker_85e5c8660847fc8abf7d2dfd1fc9badf = L.marker(
+                [39.39729, -106.10643],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_947e55ec53c3d00d6360c3820edc3db5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_85e5c8660847fc8abf7d2dfd1fc9badf.setIcon(icon_947e55ec53c3d00d6360c3820edc3db5);
+        
+    
+        var popup_10df03daf5403aed2850b521f7cfe338 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9a81fbd7d47f13666239f5e80775440b = $(`<div id="html_9a81fbd7d47f13666239f5e80775440b" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 13<br><b>Peak:</b> Quandary Peak<br><b>Elevation:</b> 14271 feet<br></div>`)[0];
+                popup_10df03daf5403aed2850b521f7cfe338.setContent(html_9a81fbd7d47f13666239f5e80775440b);
+            
+        
+
+        marker_85e5c8660847fc8abf7d2dfd1fc9badf.bindPopup(popup_10df03daf5403aed2850b521f7cfe338)
+        ;
+
+        
+    
+    
+            var marker_5abec55cdd0092291c236ba52bd931a9 = L.marker(
+                [39.58835, -105.6437],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_2b06f86eccf11dc5e08b3d2387089c4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5abec55cdd0092291c236ba52bd931a9.setIcon(icon_2b06f86eccf11dc5e08b3d2387089c4f);
+        
+    
+        var popup_928fcc5fcce5364b88de15968c7510df = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3b456bd7cf5246fe84a432dd591b0182 = $(`<div id="html_3b456bd7cf5246fe84a432dd591b0182" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 14<br><b>Peak:</b> Mt. Evans<br><b>Elevation:</b> 14265 feet<br></div>`)[0];
+                popup_928fcc5fcce5364b88de15968c7510df.setContent(html_3b456bd7cf5246fe84a432dd591b0182);
+            
+        
+
+        marker_5abec55cdd0092291c236ba52bd931a9.bindPopup(popup_928fcc5fcce5364b88de15968c7510df)
+        ;
+
+        
+    
+    
+            var marker_94fd22f400fc539b175b664d086f0f17 = L.marker(
+                [40.25489, -105.61524],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_446ac0e8e5ed35d1824b99fcbcdf1d75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_94fd22f400fc539b175b664d086f0f17.setIcon(icon_446ac0e8e5ed35d1824b99fcbcdf1d75);
+        
+    
+        var popup_a323da96929b01f5cd1c213c111e1ab4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7a1846fd71fc746d72b4521759d176a4 = $(`<div id="html_7a1846fd71fc746d72b4521759d176a4" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 15<br><b>Peak:</b> Longs Peak<br><b>Elevation:</b> 14259 feet<br></div>`)[0];
+                popup_a323da96929b01f5cd1c213c111e1ab4.setContent(html_7a1846fd71fc746d72b4521759d176a4);
+            
+        
+
+        marker_94fd22f400fc539b175b664d086f0f17.bindPopup(popup_a323da96929b01f5cd1c213c111e1ab4)
+        ;
+
+        
+    
+    
+            var marker_31d047f1629b4ed3f9609cc065044014 = L.marker(
+                [37.83921, -107.99163],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_336eef7e2baea25d3f05a867ecabf8e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_31d047f1629b4ed3f9609cc065044014.setIcon(icon_336eef7e2baea25d3f05a867ecabf8e5);
+        
+    
+        var popup_ac080a1129ef0d59278800228562d2ba = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a5260bab67524575685446db82c64d2e = $(`<div id="html_a5260bab67524575685446db82c64d2e" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 16<br><b>Peak:</b> Mt. Wilson<br><b>Elevation:</b> 14246 feet<br></div>`)[0];
+                popup_ac080a1129ef0d59278800228562d2ba.setContent(html_a5260bab67524575685446db82c64d2e);
+            
+        
+
+        marker_31d047f1629b4ed3f9609cc065044014.bindPopup(popup_ac080a1129ef0d59278800228562d2ba)
+        ;
+
+        
+    
+    
+            var marker_4396d7f0cfde686afdb0a3da0fa1c0ce = L.marker(
+                [39.34624, -106.11905],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_519e1653134191ca2f0a2b936db04e07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4396d7f0cfde686afdb0a3da0fa1c0ce.setIcon(icon_519e1653134191ca2f0a2b936db04e07);
+        
+    
+        var popup_a4854a4d33fe55a5eebf81588123e69a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c8e4e2e59a3ac9c154d3f5153595fa9b = $(`<div id="html_c8e4e2e59a3ac9c154d3f5153595fa9b" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 17<br><b>Peak:</b> Mt. Cameron<br><b>Elevation:</b> 14238 feet<br></div>`)[0];
+                popup_a4854a4d33fe55a5eebf81588123e69a.setContent(html_c8e4e2e59a3ac9c154d3f5153595fa9b);
+            
+        
+
+        marker_4396d7f0cfde686afdb0a3da0fa1c0ce.bindPopup(popup_a4854a4d33fe55a5eebf81588123e69a)
+        ;
+
+        
+    
+    
+            var marker_ec17aed2889c846ac2b0cea3d5a6e6e3 = L.marker(
+                [38.6188861, -106.239466],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_d5ee6b850f7ca717dcaa7fa20750dade = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ec17aed2889c846ac2b0cea3d5a6e6e3.setIcon(icon_d5ee6b850f7ca717dcaa7fa20750dade);
+        
+    
+        var popup_3d2bc296869cb19e58354fb9eb0a91f2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_df9fd738e6c20a5e77522835c1588949 = $(`<div id="html_df9fd738e6c20a5e77522835c1588949" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 18<br><b>Peak:</b> Mt. Shavano<br><b>Elevation:</b> 14231 feet<br></div>`)[0];
+                popup_3d2bc296869cb19e58354fb9eb0a91f2.setContent(html_df9fd738e6c20a5e77522835c1588949);
+            
+        
+
+        marker_ec17aed2889c846ac2b0cea3d5a6e6e3.bindPopup(popup_3d2bc296869cb19e58354fb9eb0a91f2)
+        ;
+
+        
+    
+    
+            var marker_bc9cfc738710e574f9790beef6f7e872 = L.marker(
+                [38.74924, -106.24249],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_8ea57a9b3ecaa801ff9cfe8084434ea0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_bc9cfc738710e574f9790beef6f7e872.setIcon(icon_8ea57a9b3ecaa801ff9cfe8084434ea0);
+        
+    
+        var popup_51c7f33930cc08095f3a482e9c3c4900 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e735f84ac557da3d6cb6caf6a38bf727 = $(`<div id="html_e735f84ac557da3d6cb6caf6a38bf727" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 19<br><b>Peak:</b> Mt. Princeton<br><b>Elevation:</b> 14204 feet<br></div>`)[0];
+                popup_51c7f33930cc08095f3a482e9c3c4900.setContent(html_e735f84ac557da3d6cb6caf6a38bf727);
+            
+        
+
+        marker_bc9cfc738710e574f9790beef6f7e872.bindPopup(popup_51c7f33930cc08095f3a482e9c3c4900)
+        ;
+
+        
+    
+    
+            var marker_7ae4c095f1def6312e51c28fcfda7d6d = L.marker(
+                [38.961519, -106.361547],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_911faa69ef60a1893efa7819f9e0ffee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7ae4c095f1def6312e51c28fcfda7d6d.setIcon(icon_911faa69ef60a1893efa7819f9e0ffee);
+        
+    
+        var popup_711a13a546958536580ac44f416827cc = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_757f8f690b218b76e1c4c289bbd368b3 = $(`<div id="html_757f8f690b218b76e1c4c289bbd368b3" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 20<br><b>Peak:</b> Mt. Belford<br><b>Elevation:</b> 14203 feet<br></div>`)[0];
+                popup_711a13a546958536580ac44f416827cc.setContent(html_757f8f690b218b76e1c4c289bbd368b3);
+            
+        
+
+        marker_7ae4c095f1def6312e51c28fcfda7d6d.bindPopup(popup_711a13a546958536580ac44f416827cc)
+        ;
+
+        
+    
+    
+            var marker_d6c8f84082d05bd7c4709301db59a3a6 = L.marker(
+                [38.844193, -106.313807],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_26ded461dce06244fded6e1a93132336 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d6c8f84082d05bd7c4709301db59a3a6.setIcon(icon_26ded461dce06244fded6e1a93132336);
+        
+    
+        var popup_c83e55c0641b523b17f3c360fe4ca143 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_be20d7d8ca30b7e68f0c06042a492663 = $(`<div id="html_be20d7d8ca30b7e68f0c06042a492663" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 21<br><b>Peak:</b> Mt. Yale<br><b>Elevation:</b> 14200 feet<br></div>`)[0];
+                popup_c83e55c0641b523b17f3c360fe4ca143.setContent(html_be20d7d8ca30b7e68f0c06042a492663);
+            
+        
+
+        marker_d6c8f84082d05bd7c4709301db59a3a6.bindPopup(popup_c83e55c0641b523b17f3c360fe4ca143)
+        ;
+
+        
+    
+    
+            var marker_2768e73625d590fcc1c92eeaaddeff1c = L.marker(
+                [37.964702, -105.576788],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_5310b0378245ce015b81556b4b59735e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2768e73625d590fcc1c92eeaaddeff1c.setIcon(icon_5310b0378245ce015b81556b4b59735e);
+        
+    
+        var popup_7c1a0317571f78409cd8cdac449c62ba = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d00476d6dcda31c2fe3099dbde522ac3 = $(`<div id="html_d00476d6dcda31c2fe3099dbde522ac3" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 22<br><b>Peak:</b> Crestone Needle<br><b>Elevation:</b> 14197 feet<br></div>`)[0];
+                popup_7c1a0317571f78409cd8cdac449c62ba.setContent(html_d00476d6dcda31c2fe3099dbde522ac3);
+            
+        
+
+        marker_2768e73625d590fcc1c92eeaaddeff1c.bindPopup(popup_7c1a0317571f78409cd8cdac449c62ba)
+        ;
+
+        
+    
+    
+            var marker_5bd79b5918d80090d9a4cf73ab1801e7 = L.marker(
+                [39.33544, -106.10774],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_4cbe628ae752c8eb63a669f1a496b8c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5bd79b5918d80090d9a4cf73ab1801e7.setIcon(icon_4cbe628ae752c8eb63a669f1a496b8c9);
+        
+    
+        var popup_52a9483f80748895d741ef68db52ca40 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b9977ed8be7231e58f73f945640583e4 = $(`<div id="html_b9977ed8be7231e58f73f945640583e4" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 23<br><b>Peak:</b> Mt. Bross<br><b>Elevation:</b> 14172 feet<br></div>`)[0];
+                popup_52a9483f80748895d741ef68db52ca40.setContent(html_b9977ed8be7231e58f73f945640583e4);
+            
+        
+
+        marker_5bd79b5918d80090d9a4cf73ab1801e7.bindPopup(popup_52a9483f80748895d741ef68db52ca40)
+        ;
+
+        
+    
+    
+            var marker_e0b3bc30fdd73580dd7ab1145e31619a = L.marker(
+                [37.9797219, -105.6025089],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_73579e4939b8e65ea9e1eea1067e43ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e0b3bc30fdd73580dd7ab1145e31619a.setIcon(icon_73579e4939b8e65ea9e1eea1067e43ba);
+        
+    
+        var popup_63eeba9fdf921053286270a1d7a39408 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6bade8577388d41121a47bf2493f403a = $(`<div id="html_6bade8577388d41121a47bf2493f403a" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 24<br><b>Peak:</b> Kit Carson Peak<br><b>Elevation:</b> 14165 feet<br></div>`)[0];
+                popup_63eeba9fdf921053286270a1d7a39408.setContent(html_6bade8577388d41121a47bf2493f403a);
+            
+        
+
+        marker_e0b3bc30fdd73580dd7ab1145e31619a.bindPopup(popup_63eeba9fdf921053286270a1d7a39408)
+        ;
+
+        
+    
+    
+            var marker_be90b0b2f07e4bf0ca1fd2e2cd03211c = L.marker(
+                [39.070838, -106.989],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_141b8a7efc7a76422edfc97af9c3ae24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_be90b0b2f07e4bf0ca1fd2e2cd03211c.setIcon(icon_141b8a7efc7a76422edfc97af9c3ae24);
+        
+    
+        var popup_59c4db7e0f30f0935716355d0a68c88e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_97c4ef09435a04a52f39fbb71666a9f5 = $(`<div id="html_97c4ef09435a04a52f39fbb71666a9f5" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 25<br><b>Peak:</b> Maroon Peak<br><b>Elevation:</b> 14163 feet<br></div>`)[0];
+                popup_59c4db7e0f30f0935716355d0a68c88e.setContent(html_97c4ef09435a04a52f39fbb71666a9f5);
+            
+        
+
+        marker_be90b0b2f07e4bf0ca1fd2e2cd03211c.bindPopup(popup_59c4db7e0f30f0935716355d0a68c88e)
+        ;
+
+        
+    
+    
+            var marker_c937e150aab9f1c5462fd5f2b5cdbe57 = L.marker(
+                [38.6255, -106.25086],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_39aaee26281fc03c03d93c5fae752e38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c937e150aab9f1c5462fd5f2b5cdbe57.setIcon(icon_39aaee26281fc03c03d93c5fae752e38);
+        
+    
+        var popup_204e15f94c8efe3b59f80cdb9ae3ef87 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_19deb8fb27d996743fbe3c4be7d5e0a2 = $(`<div id="html_19deb8fb27d996743fbe3c4be7d5e0a2" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 26<br><b>Peak:</b> Tabeguache Peak<br><b>Elevation:</b> 14162 feet<br></div>`)[0];
+                popup_204e15f94c8efe3b59f80cdb9ae3ef87.setContent(html_19deb8fb27d996743fbe3c4be7d5e0a2);
+            
+        
+
+        marker_c937e150aab9f1c5462fd5f2b5cdbe57.bindPopup(popup_204e15f94c8efe3b59f80cdb9ae3ef87)
+        ;
+
+        
+    
+    
+            var marker_f895f7e1797aa23d80a2e9dfb027f4b2 = L.marker(
+                [38.96451, -106.33906],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_aca0bc684240c4e258f6fab86c71a96f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f895f7e1797aa23d80a2e9dfb027f4b2.setIcon(icon_aca0bc684240c4e258f6fab86c71a96f);
+        
+    
+        var popup_7e8d58cc257854177675709c2f053dc5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b3ef83ac56bce0298d6cbb81b461b848 = $(`<div id="html_b3ef83ac56bce0298d6cbb81b461b848" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 27<br><b>Peak:</b> Mt. Oxford<br><b>Elevation:</b> 14160 feet<br></div>`)[0];
+                popup_7e8d58cc257854177675709c2f053dc5.setContent(html_b3ef83ac56bce0298d6cbb81b461b848);
+            
+        
+
+        marker_f895f7e1797aa23d80a2e9dfb027f4b2.bindPopup(popup_7e8d58cc257854177675709c2f053dc5)
+        ;
+
+        
+    
+    
+            var marker_0aaf7457e0839540f2873ce995317b5b = L.marker(
+                [37.8394383, -108.0053474],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_637304dcaf1c91398faf34682c417efa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0aaf7457e0839540f2873ce995317b5b.setIcon(icon_637304dcaf1c91398faf34682c417efa);
+        
+    
+        var popup_f15ea1198b0d2a58ffdccc3813e69013 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_46738e9494388d35c563b824388060a1 = $(`<div id="html_46738e9494388d35c563b824388060a1" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 28<br><b>Peak:</b> El Diente Peak<br><b>Elevation:</b> 14159 feet<br></div>`)[0];
+                popup_f15ea1198b0d2a58ffdccc3813e69013.setContent(html_46738e9494388d35c563b824388060a1);
+            
+        
+
+        marker_0aaf7457e0839540f2873ce995317b5b.bindPopup(popup_f15ea1198b0d2a58ffdccc3813e69013)
+        ;
+
+        
+    
+    
+            var marker_6ba981bbb8ba4de306422370a07aee13 = L.marker(
+                [39.3397101, -106.1487757],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_14491caaf7a0f3b64073a943f6b279ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6ba981bbb8ba4de306422370a07aee13.setIcon(icon_14491caaf7a0f3b64073a943f6b279ba);
+        
+    
+        var popup_683d41f548a98227c6a3789808b578ab = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_04d46f891e0dcdbd96ea1cada0ab4921 = $(`<div id="html_04d46f891e0dcdbd96ea1cada0ab4921" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 29<br><b>Peak:</b> Mt. Democrat<br><b>Elevation:</b> 14155 feet<br></div>`)[0];
+                popup_683d41f548a98227c6a3789808b578ab.setContent(html_04d46f891e0dcdbd96ea1cada0ab4921);
+            
+        
+
+        marker_6ba981bbb8ba4de306422370a07aee13.bindPopup(popup_683d41f548a98227c6a3789808b578ab)
+        ;
+
+        
+    
+    
+            var marker_e59550c38841c75086dc045a8a30e544 = L.marker(
+                [38.003817, -107.792351],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_7aae12f3be71705f09db3c582cc32ac8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e59550c38841c75086dc045a8a30e544.setIcon(icon_7aae12f3be71705f09db3c582cc32ac8);
+        
+    
+        var popup_e68200c25e0c454f6576f60011e08e6b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f951f4509c6842aa6d4b1a0bb04a95f3 = $(`<div id="html_f951f4509c6842aa6d4b1a0bb04a95f3" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 30<br><b>Peak:</b> Mt. Sneffels<br><b>Elevation:</b> 14150 feet<br></div>`)[0];
+                popup_e68200c25e0c454f6576f60011e08e6b.setContent(html_f951f4509c6842aa6d4b1a0bb04a95f3);
+            
+        
+
+        marker_e59550c38841c75086dc045a8a30e544.bindPopup(popup_e68200c25e0c454f6576f60011e08e6b)
+        ;
+
+        
+    
+    
+            var marker_7982c760d705dd8a7c280c16907701a8 = L.marker(
+                [39.150264, -107.082939],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_b74cbca656af8ad78c2e849ea7ba5f56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7982c760d705dd8a7c280c16907701a8.setIcon(icon_b74cbca656af8ad78c2e849ea7ba5f56);
+        
+    
+        var popup_b76cbb58577c6afefd34f75d4e27e607 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_941825cfc7e84aa4f95c11fe0b995c4a = $(`<div id="html_941825cfc7e84aa4f95c11fe0b995c4a" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 31<br><b>Peak:</b> Capitol Peak<br><b>Elevation:</b> 14130 feet<br></div>`)[0];
+                popup_b76cbb58577c6afefd34f75d4e27e607.setContent(html_941825cfc7e84aa4f95c11fe0b995c4a);
+            
+        
+
+        marker_7982c760d705dd8a7c280c16907701a8.bindPopup(popup_b76cbb58577c6afefd34f75d4e27e607)
+        ;
+
+        
+    
+    
+            var marker_3e9cbba7182117c87ec09a49a047a5f9 = L.marker(
+                [38.84018, -105.04441],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_4fd47914adfe195c4cde48c2fc257c5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3e9cbba7182117c87ec09a49a047a5f9.setIcon(icon_4fd47914adfe195c4cde48c2fc257c5f);
+        
+    
+        var popup_909ae65aed84223774c8e243fa6fccf6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_fa804f3da6b1b6dc7ee0b844b73eddd9 = $(`<div id="html_fa804f3da6b1b6dc7ee0b844b73eddd9" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 32<br><b>Peak:</b> Pikes Peak<br><b>Elevation:</b> 14115 feet<br></div>`)[0];
+                popup_909ae65aed84223774c8e243fa6fccf6.setContent(html_fa804f3da6b1b6dc7ee0b844b73eddd9);
+            
+        
+
+        marker_3e9cbba7182117c87ec09a49a047a5f9.bindPopup(popup_909ae65aed84223774c8e243fa6fccf6)
+        ;
+
+        
+    
+    
+            var marker_626eb87a3400a4e42026d9ed1316db37 = L.marker(
+                [39.1188767, -107.0664355],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_442fb0719abb7e324c2b86d2ddc682c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_626eb87a3400a4e42026d9ed1316db37.setIcon(icon_442fb0719abb7e324c2b86d2ddc682c7);
+        
+    
+        var popup_aeddbd69ebf917c3d6fd7169c59df217 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_679419329c13d9db2e700b2725797114 = $(`<div id="html_679419329c13d9db2e700b2725797114" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 33<br><b>Peak:</b> Snowmass Mtn.<br><b>Elevation:</b> 14099 feet<br></div>`)[0];
+                popup_aeddbd69ebf917c3d6fd7169c59df217.setContent(html_679419329c13d9db2e700b2725797114);
+            
+        
+
+        marker_626eb87a3400a4e42026d9ed1316db37.bindPopup(popup_aeddbd69ebf917c3d6fd7169c59df217)
+        ;
+
+        
+    
+    
+            var marker_ba6d5b81b05f42e6082af9e934773b10 = L.marker(
+                [37.62189, -107.62275],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_b78fe26b6fe09bdd3808bf21ef0462c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ba6d5b81b05f42e6082af9e934773b10.setIcon(icon_b78fe26b6fe09bdd3808bf21ef0462c2);
+        
+    
+        var popup_ed7036e1dfd5214f2ae81d593fa8c9b9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8b4ff97d248b0d8e47dcd9522a5662b9 = $(`<div id="html_8b4ff97d248b0d8e47dcd9522a5662b9" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 34<br><b>Peak:</b> Mt. Eolus<br><b>Elevation:</b> 14083 feet<br></div>`)[0];
+                popup_ed7036e1dfd5214f2ae81d593fa8c9b9.setContent(html_8b4ff97d248b0d8e47dcd9522a5662b9);
+            
+        
+
+        marker_ba6d5b81b05f42e6082af9e934773b10.bindPopup(popup_ed7036e1dfd5214f2ae81d593fa8c9b9)
+        ;
+
+        
+    
+    
+            var marker_06631f17b29aef8c1f3abed605630c6a = L.marker(
+                [37.621166, -107.591879],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_5c2fd2fa0ebb871129da5164aa35f3d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_06631f17b29aef8c1f3abed605630c6a.setIcon(icon_5c2fd2fa0ebb871129da5164aa35f3d6);
+        
+    
+        var popup_d22c132cb4d422b48a8692a0c6b477c0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d9898bc514e298d4911bfe5cd06e01b1 = $(`<div id="html_d9898bc514e298d4911bfe5cd06e01b1" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 35<br><b>Peak:</b> Windom Peak<br><b>Elevation:</b> 14082 feet<br></div>`)[0];
+                popup_d22c132cb4d422b48a8692a0c6b477c0.setContent(html_d9898bc514e298d4911bfe5cd06e01b1);
+            
+        
+
+        marker_06631f17b29aef8c1f3abed605630c6a.bindPopup(popup_d22c132cb4d422b48a8692a0c6b477c0)
+        ;
+
+        
+    
+    
+            var marker_61b799dbe731da976cbdcfbf07580378 = L.marker(
+                [37.980327, -105.606582],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_4bc961728b60b58fcb6ec7b0b8fb1d87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_61b799dbe731da976cbdcfbf07580378.setIcon(icon_4bc961728b60b58fcb6ec7b0b8fb1d87);
+        
+    
+        var popup_6045c2ab1d01cc66d942030a9f677ec9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_59d3b0ec037ad1173c54d6413459ae32 = $(`<div id="html_59d3b0ec037ad1173c54d6413459ae32" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 36<br><b>Peak:</b> Challenger Point<br><b>Elevation:</b> 14081 feet<br></div>`)[0];
+                popup_6045c2ab1d01cc66d942030a9f677ec9.setContent(html_59d3b0ec037ad1173c54d6413459ae32);
+            
+        
+
+        marker_61b799dbe731da976cbdcfbf07580378.bindPopup(popup_6045c2ab1d01cc66d942030a9f677ec9)
+        ;
+
+        
+    
+    
+            var marker_a598c9b2cafeb2acf64f57bf54217ebc = L.marker(
+                [38.9039198, -106.2974778],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_bcc8cc9bcb5627fc5597c6092eebf17e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a598c9b2cafeb2acf64f57bf54217ebc.setIcon(icon_bcc8cc9bcb5627fc5597c6092eebf17e);
+        
+    
+        var popup_78e9339282480c12d11d24725bba0245 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a1b4948df5fc876db50f2ddbe166d4fe = $(`<div id="html_a1b4948df5fc876db50f2ddbe166d4fe" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 37<br><b>Peak:</b> Mt. Columbia<br><b>Elevation:</b> 14077 feet<br></div>`)[0];
+                popup_78e9339282480c12d11d24725bba0245.setContent(html_a1b4948df5fc876db50f2ddbe166d4fe);
+            
+        
+
+        marker_a598c9b2cafeb2acf64f57bf54217ebc.bindPopup(popup_78e9339282480c12d11d24725bba0245)
+        ;
+
+        
+    
+    
+            var marker_b4bd2c82dd34edbaf7c6d81ddd155981 = L.marker(
+                [38.947427, -106.378567],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_400f21800c5226948ff89abf78420dc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b4bd2c82dd34edbaf7c6d81ddd155981.setIcon(icon_400f21800c5226948ff89abf78420dc3);
+        
+    
+        var popup_2bf6b67538bbfa79ae6efa2c23641c35 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_59264a8e324f67d274977705498bfe5f = $(`<div id="html_59264a8e324f67d274977705498bfe5f" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 38<br><b>Peak:</b> Missouri Mountain<br><b>Elevation:</b> 14074 feet<br></div>`)[0];
+                popup_2bf6b67538bbfa79ae6efa2c23641c35.setContent(html_59264a8e324f67d274977705498bfe5f);
+            
+        
+
+        marker_b4bd2c82dd34edbaf7c6d81ddd155981.bindPopup(popup_2bf6b67538bbfa79ae6efa2c23641c35)
+        ;
+
+        
+    
+    
+            var marker_88e0502a0a3ca72439bfdf57b7871055 = L.marker(
+                [37.97611, -105.55529],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_7612484aecc9da5e7b836d8999accfe0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_88e0502a0a3ca72439bfdf57b7871055.setIcon(icon_7612484aecc9da5e7b836d8999accfe0);
+        
+    
+        var popup_c42cbdb87908517048a80f1474ec8ba0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_679d9f013b171df8e55154d3fbd56a0a = $(`<div id="html_679d9f013b171df8e55154d3fbd56a0a" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 39<br><b>Peak:</b> Humbodlt Peak<br><b>Elevation:</b> 14064 feet<br></div>`)[0];
+                popup_c42cbdb87908517048a80f1474ec8ba0.setContent(html_679d9f013b171df8e55154d3fbd56a0a);
+            
+        
+
+        marker_88e0502a0a3ca72439bfdf57b7871055.bindPopup(popup_c42cbdb87908517048a80f1474ec8ba0)
+        ;
+
+        
+    
+    
+            var marker_8b9f5692dea86a70f6e8840d7169c9ad = L.marker(
+                [39.582561, -105.668832],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_70e797d880b09dfbf40898d37032952e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8b9f5692dea86a70f6e8840d7169c9ad.setIcon(icon_70e797d880b09dfbf40898d37032952e);
+        
+    
+        var popup_34fea2c6cf5087cae3255818a078c22d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3259a05c8f2e7194129faf450e4647ae = $(`<div id="html_3259a05c8f2e7194129faf450e4647ae" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 40<br><b>Peak:</b> Mt. Bierstadt<br><b>Elevation:</b> 14060 feet<br></div>`)[0];
+                popup_34fea2c6cf5087cae3255818a078c22d.setContent(html_3259a05c8f2e7194129faf450e4647ae);
+            
+        
+
+        marker_8b9f5692dea86a70f6e8840d7169c9ad.bindPopup(popup_34fea2c6cf5087cae3255818a078c22d)
+        ;
+
+        
+    
+    
+            var marker_82b6087d41d87a996578a14604a9bb7e = L.marker(
+                [39.015682, -106.862749],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_158959baa04df871e152b102adb3e184 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_82b6087d41d87a996578a14604a9bb7e.setIcon(icon_158959baa04df871e152b102adb3e184);
+        
+    
+        var popup_844804a1207f373e19f239798e8f6f2e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_13556f9218d261718a2b304a8b1fd8e8 = $(`<div id="html_13556f9218d261718a2b304a8b1fd8e8" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 41<br><b>Peak:</b> Conundrum Peak<br><b>Elevation:</b> 14060 feet<br></div>`)[0];
+                popup_844804a1207f373e19f239798e8f6f2e.setContent(html_13556f9218d261718a2b304a8b1fd8e8);
+            
+        
+
+        marker_82b6087d41d87a996578a14604a9bb7e.bindPopup(popup_844804a1207f373e19f239798e8f6f2e)
+        ;
+
+        
+    
+    
+            var marker_647e02b6c4e00ae8f3d082697a951c19 = L.marker(
+                [37.627419, -107.595727],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_c3d5cecbb5384217740d20a0910a7210 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_647e02b6c4e00ae8f3d082697a951c19.setIcon(icon_c3d5cecbb5384217740d20a0910a7210);
+        
+    
+        var popup_e46bff0bbd05917d1b1623c78976e8e3 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_875814e597b428fbaedd6eae69478296 = $(`<div id="html_875814e597b428fbaedd6eae69478296" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 42<br><b>Peak:</b> Sunlight Peak<br><b>Elevation:</b> 14059 feet<br></div>`)[0];
+                popup_e46bff0bbd05917d1b1623c78976e8e3.setContent(html_875814e597b428fbaedd6eae69478296);
+            
+        
+
+        marker_647e02b6c4e00ae8f3d082697a951c19.bindPopup(popup_e46bff0bbd05917d1b1623c78976e8e3)
+        ;
+
+        
+    
+    
+            var marker_2e49e9eaa61e8ff981ae39cddf7e7a24 = L.marker(
+                [37.90875, -107.48088],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_0af411fe7dd2e2c8c3cd8448ce8d5720 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2e49e9eaa61e8ff981ae39cddf7e7a24.setIcon(icon_0af411fe7dd2e2c8c3cd8448ce8d5720);
+        
+    
+        var popup_48b6020cb261d335c1844252a1ba7e4d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a2a90219cd0ab9e61d5f6f0ae6bf8593 = $(`<div id="html_a2a90219cd0ab9e61d5f6f0ae6bf8593" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 43<br><b>Peak:</b> Handies Peak<br><b>Elevation:</b> 14058 feet<br></div>`)[0];
+                popup_48b6020cb261d335c1844252a1ba7e4d.setContent(html_a2a90219cd0ab9e61d5f6f0ae6bf8593);
+            
+        
+
+        marker_2e49e9eaa61e8ff981ae39cddf7e7a24.bindPopup(popup_48b6020cb261d335c1844252a1ba7e4d)
+        ;
+
+        
+    
+    
+            var marker_d76d2355f19c3aef1cbe555b6012f6dd = L.marker(
+                [37.1222416, -105.1855625],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_0ecfa6fda2c9be56ac6102b7c7a26480 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d76d2355f19c3aef1cbe555b6012f6dd.setIcon(icon_0ecfa6fda2c9be56ac6102b7c7a26480);
+        
+    
+        var popup_627eaae61a8a32ea19a3634bdbda19b9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_24bb9c25119ea8995d1c7304d6348afc = $(`<div id="html_24bb9c25119ea8995d1c7304d6348afc" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 44<br><b>Peak:</b> Culebra Peak<br><b>Elevation:</b> 14047 feet<br></div>`)[0];
+                popup_627eaae61a8a32ea19a3634bdbda19b9.setContent(html_24bb9c25119ea8995d1c7304d6348afc);
+            
+        
+
+        marker_d76d2355f19c3aef1cbe555b6012f6dd.bindPopup(popup_627eaae61a8a32ea19a3634bdbda19b9)
+        ;
+
+        
+    
+    
+            var marker_732d1c4f8cfe222ce63962555dc8cfbf = L.marker(
+                [37.5825045, -105.4925114],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_c1587599ab1e0d9ee6e654ece15cc177 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_732d1c4f8cfe222ce63962555dc8cfbf.setIcon(icon_c1587599ab1e0d9ee6e654ece15cc177);
+        
+    
+        var popup_fdc7a8cb67f03deb4ffa353dcc66c163 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6da8839ffbf688dc7126440b8b288388 = $(`<div id="html_6da8839ffbf688dc7126440b8b288388" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 45<br><b>Peak:</b> Ellingwood Point<br><b>Elevation:</b> 14042 feet<br></div>`)[0];
+                popup_fdc7a8cb67f03deb4ffa353dcc66c163.setContent(html_6da8839ffbf688dc7126440b8b288388);
+            
+        
+
+        marker_732d1c4f8cfe222ce63962555dc8cfbf.bindPopup(popup_fdc7a8cb67f03deb4ffa353dcc66c163)
+        ;
+
+        
+    
+    
+            var marker_3e263af1ebd822def5c05f08a4732aff = L.marker(
+                [37.58391, -105.44492],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_5cba82b46298de61bba036d3b92706a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3e263af1ebd822def5c05f08a4732aff.setIcon(icon_5cba82b46298de61bba036d3b92706a9);
+        
+    
+        var popup_ae5abbb7e63853aaf042ea178ca3c1dd = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_db3deca1c3488d6ee97d79bf348e67f1 = $(`<div id="html_db3deca1c3488d6ee97d79bf348e67f1" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 46<br><b>Peak:</b> Mt. Lindsey<br><b>Elevation:</b> 14042 feet<br></div>`)[0];
+                popup_ae5abbb7e63853aaf042ea178ca3c1dd.setContent(html_db3deca1c3488d6ee97d79bf348e67f1);
+            
+        
+
+        marker_3e263af1ebd822def5c05f08a4732aff.bindPopup(popup_ae5abbb7e63853aaf042ea178ca3c1dd)
+        ;
+
+        
+    
+    
+            var marker_5e9faae4a8d44e18aefbc6d33af1a755 = L.marker(
+                [37.62189, -107.62275],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_b60b74e76d1f25ff5de304006bc5a658 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5e9faae4a8d44e18aefbc6d33af1a755.setIcon(icon_b60b74e76d1f25ff5de304006bc5a658);
+        
+    
+        var popup_49072e376dd4005a4bbebeff114824af = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_09ea91a9c4aaadf06ee3f004be890d3c = $(`<div id="html_09ea91a9c4aaadf06ee3f004be890d3c" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 47<br><b>Peak:</b> North Eolus<br><b>Elevation:</b> 14039 feet<br></div>`)[0];
+                popup_49072e376dd4005a4bbebeff114824af.setContent(html_09ea91a9c4aaadf06ee3f004be890d3c);
+            
+        
+
+        marker_5e9faae4a8d44e18aefbc6d33af1a755.bindPopup(popup_49072e376dd4005a4bbebeff114824af)
+        ;
+
+        
+    
+    
+            var marker_84a8e6e49ffe9d54fd21b5a701446461 = L.marker(
+                [37.56667, -105.49723],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_e1818ab67aa4e9f50f0cb7763efbf483 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_84a8e6e49ffe9d54fd21b5a701446461.setIcon(icon_e1818ab67aa4e9f50f0cb7763efbf483);
+        
+    
+        var popup_a65ffc20a2de9c4cf3c020d8de0c82b6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ad299b61e38cfb8f05d03fa3dc7120c6 = $(`<div id="html_ad299b61e38cfb8f05d03fa3dc7120c6" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 48<br><b>Peak:</b> Little Bear Peak<br><b>Elevation:</b> 14037 feet<br></div>`)[0];
+                popup_a65ffc20a2de9c4cf3c020d8de0c82b6.setContent(html_ad299b61e38cfb8f05d03fa3dc7120c6);
+            
+        
+
+        marker_84a8e6e49ffe9d54fd21b5a701446461.bindPopup(popup_a65ffc20a2de9c4cf3c020d8de0c82b6)
+        ;
+
+        
+    
+    
+            var marker_85877d6b56b4f1d8ec1a3344f246b166 = L.marker(
+                [39.22511, -106.17008],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_8aa06b64d37cc13444a225d2b21bf518 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_85877d6b56b4f1d8ec1a3344f246b166.setIcon(icon_8aa06b64d37cc13444a225d2b21bf518);
+        
+    
+        var popup_d560a4a618b003b8cb1b4658cd6ddb5b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5b96913820151e09603815d379d5a1b2 = $(`<div id="html_5b96913820151e09603815d379d5a1b2" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 49<br><b>Peak:</b> Mt. Sherman<br><b>Elevation:</b> 14036 feet<br></div>`)[0];
+                popup_d560a4a618b003b8cb1b4658cd6ddb5b.setContent(html_5b96913820151e09603815d379d5a1b2);
+            
+        
+
+        marker_85877d6b56b4f1d8ec1a3344f246b166.bindPopup(popup_d560a4a618b003b8cb1b4658cd6ddb5b)
+        ;
+
+        
+    
+    
+            var marker_2bb6e1a779e8e4bc665b2c470fd57d1f = L.marker(
+                [37.94093, -107.42172],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_3c957fcf4ac8d1535238e457229fc286 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2bb6e1a779e8e4bc665b2c470fd57d1f.setIcon(icon_3c957fcf4ac8d1535238e457229fc286);
+        
+    
+        var popup_022b8cbac234dd05cc9582808b851958 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8ef958eca10dfa1786bfcb3a6434056d = $(`<div id="html_8ef958eca10dfa1786bfcb3a6434056d" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 50<br><b>Peak:</b> Redcloud Peak<br><b>Elevation:</b> 14034 feet<br></div>`)[0];
+                popup_022b8cbac234dd05cc9582808b851958.setContent(html_8ef958eca10dfa1786bfcb3a6434056d);
+            
+        
+
+        marker_2bb6e1a779e8e4bc665b2c470fd57d1f.bindPopup(popup_022b8cbac234dd05cc9582808b851958)
+        ;
+
+        
+    
+    
+            var marker_b745e908249b6910bc674278a9187c60 = L.marker(
+                [39.071684, -106.950165],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_875734a15171c6d76fe54d134ad13b83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b745e908249b6910bc674278a9187c60.setIcon(icon_875734a15171c6d76fe54d134ad13b83);
+        
+    
+        var popup_cb5d1bc3813586a4932795653984d7a1 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_130cccada22018de349da2701fdaf5ea = $(`<div id="html_130cccada22018de349da2701fdaf5ea" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 51<br><b>Peak:</b> Pyramid Peak<br><b>Elevation:</b> 14025 feet<br></div>`)[0];
+                popup_cb5d1bc3813586a4932795653984d7a1.setContent(html_130cccada22018de349da2701fdaf5ea);
+            
+        
+
+        marker_b745e908249b6910bc674278a9187c60.bindPopup(popup_cb5d1bc3813586a4932795653984d7a1)
+        ;
+
+        
+    
+    
+            var marker_80185b6beeece6657cf63d7d61fb6fa4 = L.marker(
+                [39.0708225, -106.9892118],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_9822cd302d321cc54f7a12220aabcf9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_80185b6beeece6657cf63d7d61fb6fa4.setIcon(icon_9822cd302d321cc54f7a12220aabcf9c);
+        
+    
+        var popup_f3ec89e97c46a0bf0fa90bdc6b840da5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_252dd1bfc180c785cd17f2296aefafca = $(`<div id="html_252dd1bfc180c785cd17f2296aefafca" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 52<br><b>Peak:</b> North Maroon Peak<br><b>Elevation:</b> 14019 feet<br></div>`)[0];
+                popup_f3ec89e97c46a0bf0fa90bdc6b840da5.setContent(html_252dd1bfc180c785cd17f2296aefafca);
+            
+        
+
+        marker_80185b6beeece6657cf63d7d61fb6fa4.bindPopup(popup_f3ec89e97c46a0bf0fa90bdc6b840da5)
+        ;
+
+        
+    
+    
+            var marker_12d47d4487b47e7085abab710746c650 = L.marker(
+                [37.8602, -107.98481],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_bac056372358b57d40be7b614ff35f53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_12d47d4487b47e7085abab710746c650.setIcon(icon_bac056372358b57d40be7b614ff35f53);
+        
+    
+        var popup_8723c64e442c56d1cdebdd9163fd15e8 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_24d499b137e29bf1e1cd1e726001538a = $(`<div id="html_24d499b137e29bf1e1cd1e726001538a" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 53<br><b>Peak:</b> Wilson Peak<br><b>Elevation:</b> 14017 feet<br></div>`)[0];
+                popup_8723c64e442c56d1cdebdd9163fd15e8.setContent(html_24d499b137e29bf1e1cd1e726001538a);
+            
+        
+
+        marker_12d47d4487b47e7085abab710746c650.bindPopup(popup_8723c64e442c56d1cdebdd9163fd15e8)
+        ;
+
+        
+    
+    
+            var marker_8761f994218c3840128a742517eaf630 = L.marker(
+                [38.0605503, -107.5108924],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_23470f6892ca2b8683bea660020c6b26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8761f994218c3840128a742517eaf630.setIcon(icon_23470f6892ca2b8683bea660020c6b26);
+        
+    
+        var popup_df35795526b9207f0a9bc12e1804397a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_bee2a7260b617059b801c3521fa262df = $(`<div id="html_bee2a7260b617059b801c3521fa262df" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 54<br><b>Peak:</b> Wetterhorn Peak<br><b>Elevation:</b> 14015 feet<br></div>`)[0];
+                popup_df35795526b9207f0a9bc12e1804397a.setContent(html_bee2a7260b617059b801c3521fa262df);
+            
+        
+
+        marker_8761f994218c3840128a742517eaf630.bindPopup(popup_df35795526b9207f0a9bc12e1804397a)
+        ;
+
+        
+    
+    
+            var marker_4a1d9f48d2a642cde8a6dc11c870aa32 = L.marker(
+                [37.98678, -106.93127],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_b3d2705492eb8cfeb8703d79dd15096e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4a1d9f48d2a642cde8a6dc11c870aa32.setIcon(icon_b3d2705492eb8cfeb8703d79dd15096e);
+        
+    
+        var popup_1b0f50f04500c4e53923d1265605c2ae = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_195f70c86b3a3f3ec7c227cbb5ddcd26 = $(`<div id="html_195f70c86b3a3f3ec7c227cbb5ddcd26" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 55<br><b>Peak:</b> San Luis Peak<br><b>Elevation:</b> 14014 feet<br></div>`)[0];
+                popup_1b0f50f04500c4e53923d1265605c2ae.setContent(html_195f70c86b3a3f3ec7c227cbb5ddcd26);
+            
+        
+
+        marker_4a1d9f48d2a642cde8a6dc11c870aa32.bindPopup(popup_1b0f50f04500c4e53923d1265605c2ae)
+        ;
+
+        
+    
+    
+            var marker_d4a9f07c8984901a87dc515f5a1c2b60 = L.marker(
+                [38.9452714, -106.438082],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_e3c13a55359497acced79da7fa4096e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d4a9f07c8984901a87dc515f5a1c2b60.setIcon(icon_e3c13a55359497acced79da7fa4096e5);
+        
+    
+        var popup_aac826ecca6e439a5d3c2cd5cb8b3823 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8dc48c02aec55ec8b33d49ec9f0eb060 = $(`<div id="html_8dc48c02aec55ec8b33d49ec9f0eb060" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 56<br><b>Peak:</b> Huron Peak<br><b>Elevation:</b> 14010 feet<br></div>`)[0];
+                popup_aac826ecca6e439a5d3c2cd5cb8b3823.setContent(html_8dc48c02aec55ec8b33d49ec9f0eb060);
+            
+        
+
+        marker_d4a9f07c8984901a87dc515f5a1c2b60.bindPopup(popup_aac826ecca6e439a5d3c2cd5cb8b3823)
+        ;
+
+        
+    
+    
+            var marker_9658dc87e601912dcad129b0a6c7785d = L.marker(
+                [39.46682, -106.48178],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_3a7ba8d3291db60f4a7a3a1fc28abdfe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_9658dc87e601912dcad129b0a6c7785d.setIcon(icon_3a7ba8d3291db60f4a7a3a1fc28abdfe);
+        
+    
+        var popup_cffe7e745b5c901e30772d788c4fc2be = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d5bf00d9bff85c51a4a12e77a9b212fc = $(`<div id="html_d5bf00d9bff85c51a4a12e77a9b212fc" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 57<br><b>Peak:</b> Mt. of the Holy Cross<br><b>Elevation:</b> 14009 feet<br></div>`)[0];
+                popup_cffe7e745b5c901e30772d788c4fc2be.setContent(html_d5bf00d9bff85c51a4a12e77a9b212fc);
+            
+        
+
+        marker_9658dc87e601912dcad129b0a6c7785d.bindPopup(popup_cffe7e745b5c901e30772d788c4fc2be)
+        ;
+
+        
+    
+    
+            var marker_337423c5a9c62e0e648acb04365b8433 = L.marker(
+                [37.92277, -107.42556],
+                {}
+            ).addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+    
+            var icon_23974fb1d6cc6cf18f8aac9c9a7d5223 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mountain", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_337423c5a9c62e0e648acb04365b8433.setIcon(icon_23974fb1d6cc6cf18f8aac9c9a7d5223);
+        
+    
+        var popup_b1999cfa4591bc2456332d5ad64da7c8 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d4e1c9dc502df3f1f7b80456e92ae43a = $(`<div id="html_d4e1c9dc502df3f1f7b80456e92ae43a" style="width: 100.0%; height: 100.0%;"><b>Rank:</b> 58<br><b>Peak:</b> Sunshine Peak<br><b>Elevation:</b> 14001 feet<br></div>`)[0];
+                popup_b1999cfa4591bc2456332d5ad64da7c8.setContent(html_d4e1c9dc502df3f1f7b80456e92ae43a);
+            
+        
+
+        marker_337423c5a9c62e0e648acb04365b8433.bindPopup(popup_b1999cfa4591bc2456332d5ad64da7c8)
+        ;
+
+        
+    
+    
+            tile_layer_c18d1bf13fcebadbcc217e177e85c67b.addTo(map_c04c2dd46cb3237b38251c0f82bec71e);
+        
+</script>
+</html>
